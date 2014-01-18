@@ -48,7 +48,7 @@
          completion:^(BOOL granted, NSError *error) {
              if (granted) {
                  
-                 [self.tweets removeAllObjects];e
+                 [self.tweets removeAllObjects];
                  //  Step 2:  Create a request
                  NSArray *twitterAccounts =
                  [self.accountStore accountsWithAccountType:twitterAccountType];
