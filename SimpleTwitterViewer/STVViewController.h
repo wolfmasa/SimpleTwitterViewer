@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Accounts/Accounts.h>
+#import <Social/Social.h>
+#import "STVDetailViewController.h"
 
-@interface STVViewController : UIViewController
+@interface STVViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tweetTable;
+
+@property (weak, nonatomic) IBOutlet UIButton *getTweetButton;
+- (IBAction)getTweet:(id)sender;
+
+@property(strong, nonatomic)ACAccountStore *accountStore;
+@property(strong, nonatomic)NSMutableArray *tweets;
 
 @end

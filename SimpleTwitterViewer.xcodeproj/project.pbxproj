@@ -22,6 +22,9 @@
 		44429093188A46D300FA9C1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44429072188A46D300FA9C1E /* UIKit.framework */; };
 		4442909B188A46D300FA9C1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44429099188A46D300FA9C1E /* InfoPlist.strings */; };
 		4442909D188A46D300FA9C1E /* SimpleTwitterViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4442909C188A46D300FA9C1E /* SimpleTwitterViewerTests.m */; };
+		444290A7188A53EB00FA9C1E /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 444290A6188A53EB00FA9C1E /* Accounts.framework */; };
+		444290A9188A549800FA9C1E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 444290A8188A549800FA9C1E /* Social.framework */; };
+		444290AC188A5ACD00FA9C1E /* STVDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444290AB188A5ACD00FA9C1E /* STVDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,10 @@
 		44429098188A46D300FA9C1E /* SimpleTwitterViewerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleTwitterViewerTests-Info.plist"; sourceTree = "<group>"; };
 		4442909A188A46D300FA9C1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4442909C188A46D300FA9C1E /* SimpleTwitterViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTwitterViewerTests.m; sourceTree = "<group>"; };
+		444290A6188A53EB00FA9C1E /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		444290A8188A549800FA9C1E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		444290AA188A5ACD00FA9C1E /* STVDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STVDetailViewController.h; sourceTree = "<group>"; };
+		444290AB188A5ACD00FA9C1E /* STVDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STVDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				444290A9188A549800FA9C1E /* Social.framework in Frameworks */,
+				444290A7188A53EB00FA9C1E /* Accounts.framework in Frameworks */,
 				44429071188A46D300FA9C1E /* CoreGraphics.framework in Frameworks */,
 				44429073188A46D300FA9C1E /* UIKit.framework in Frameworks */,
 				4442906F188A46D300FA9C1E /* Foundation.framework in Frameworks */,
@@ -103,6 +112,8 @@
 		4442906D188A46D300FA9C1E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				444290A8188A549800FA9C1E /* Social.framework */,
+				444290A6188A53EB00FA9C1E /* Accounts.framework */,
 				4442906E188A46D300FA9C1E /* Foundation.framework */,
 				44429070188A46D300FA9C1E /* CoreGraphics.framework */,
 				44429072188A46D300FA9C1E /* UIKit.framework */,
@@ -122,6 +133,8 @@
 				44429087188A46D300FA9C1E /* STVViewController.m */,
 				44429089188A46D300FA9C1E /* Images.xcassets */,
 				44429075188A46D300FA9C1E /* Supporting Files */,
+				444290AA188A5ACD00FA9C1E /* STVDetailViewController.h */,
+				444290AB188A5ACD00FA9C1E /* STVDetailViewController.m */,
 			);
 			path = SimpleTwitterViewer;
 			sourceTree = "<group>";
@@ -257,6 +270,7 @@
 				44429088188A46D300FA9C1E /* STVViewController.m in Sources */,
 				4442907F188A46D300FA9C1E /* STVAppDelegate.m in Sources */,
 				4442907B188A46D300FA9C1E /* main.m in Sources */,
+				444290AC188A5ACD00FA9C1E /* STVDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
