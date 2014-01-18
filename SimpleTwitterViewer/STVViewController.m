@@ -75,18 +75,19 @@
                              NSError *jsonError;
                              // サンプルではDictionaryだけど、Arrayが戻ってきてる
                              // JSONがArrayだし。
-                             NSArray *timelineData =
+                             NSDictionary *dicdata =
                              [NSJSONSerialization
                               JSONObjectWithData:responseData
                               options:NSJSONReadingAllowFragments error:&jsonError];
-                             NSLog(@"class=%@",[timelineData class]);
+                             NSArray*timelineData = [dicdata objectForKey:@"statuses"];
+                             //NSLog(@"class=%@",[timelineData class]);
                              if (timelineData) {
                                  //                                 NSLog(@"Timeline Response: %@\n", timelineData);
                                  for (NSDictionary *dic in timelineData) {
-                                     NSLog(@"%@", dic);
-                                     NSLog(@"class=%@",[dic class]);
-                                     NSLog(@"%@",[dic objectForKey:@"statuses"]);
-                                     [self.tweets addObject:[dic objectForKey:@"statuses"]];
+                                     //NSLog(@"%@", dic);
+                                     //NSLog(@"class=%@",[dic class]);
+                                     NSLog(@"%@",[dic objectForKey:@"text"]);
+                                     [self.tweets addObject:[dic objectForKey:@"text"]];
                                  }
                                  [self.tweetTable reloadData];
 
