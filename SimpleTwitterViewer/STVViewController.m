@@ -53,10 +53,9 @@
                  NSArray *twitterAccounts =
                  [self.accountStore accountsWithAccountType:twitterAccountType];
                  NSURL *url = [NSURL URLWithString:@"https://api.twitter.com"
-                               @"/1.1/statuses/user_timeline.json"];
-                 NSDictionary *params = @{@"screen_name" : @"wolfmasa",
-                                          @"include_rts" : @"0",
-                                          @"trim_user" : @"1",
+                               @"/1.1/search/tweets.json"];
+                 NSDictionary *params = @{@"q" : @"#frontale",
+                                          @"lang":@"ja",
                                           @"count" : @"20"};
                  SLRequest *request =
                  [SLRequest requestForServiceType:SLServiceTypeTwitter
@@ -84,9 +83,13 @@
                              if (timelineData) {
                                  //                                 NSLog(@"Timeline Response: %@\n", timelineData);
                                  for (NSDictionary *dic in timelineData) {
-                                     NSLog(@"%@",[dic objectForKey:@"text"]);
-                                     [self.tweets addObject:[dic objectForKey:@"text"]];
+                                     NSLog(@"%@", dic);
+                                     NSLog(@"class=%@",[dic class]);
+                                     NSLog(@"%@",[dic objectForKey:@"statuses"]);
+                                     [self.tweets addObject:[dic objectForKey:@"statuses"]];
                                  }
+                                 [self.tweetTable reloadData];
+
                              }
                              else {
                                  // Our JSON deserialization went awry
@@ -107,7 +110,6 @@
          }];
     }
     
-    [self.tweetTable reloadData];
 }
 
 #pragma mark TableView

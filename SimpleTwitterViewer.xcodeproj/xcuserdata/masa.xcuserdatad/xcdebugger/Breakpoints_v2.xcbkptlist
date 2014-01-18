@@ -10,13 +10,59 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SimpleTwitterViewer/STVViewController.m"
-            timestampString = "411724468.042094"
+            timestampString = "411729474.250916"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "-getTweet:"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleTwitterViewer/STVViewController.m"
+            timestampString = "411729624.586636"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "-getTweet:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__30-[STVViewController getTweet:]_block_invoke_2"
+                  moduleName = "SimpleTwitterViewer"
+                  urlString = "file:///Users/masa/xcode/SimpleTwitterViewer/SimpleTwitterViewer/STVViewController.m"
+                  timestampString = "411729754.916625"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "450">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__30-[STVViewController getTweet:]_block_invoke_2"
+                  moduleName = "SimpleTwitterViewer"
+                  urlString = "file:///Users/masa/xcode/SimpleTwitterViewer/SimpleTwitterViewer/STVViewController.m"
+                  timestampString = "411729754.916943"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "1158">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
